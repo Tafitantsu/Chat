@@ -23,7 +23,7 @@ def verify_user(username, password):
         load_users() # Attempt to load if not already loaded
 
     user = users_data.get(username)
-    if user and check_password_hash(user.get('password_hash'), password):
+    if user and user.get('password_hash') == password:
         return True
     return False
 

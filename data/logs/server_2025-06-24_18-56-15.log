@@ -1,0 +1,5 @@
+2025-06-24 18:56:25,407 - INFO - Thread-1 (handle_client) - New connection from ('127.0.0.1', 38401). Waiting for authentication.
+2025-06-24 18:56:53,439 - INFO - Thread-1 (handle_client) - Broadcasting from System (to others): "testuser has joined the chat."
+2025-06-24 18:59:05,037 - INFO - Thread-2 (handle_client) - New connection from ('127.0.0.1', 38569). Waiting for authentication.
+2025-06-24 19:00:42,727 - ERROR - Thread-2 (handle_client) - Error sending encrypted message to ('127.0.0.1', 38569): [WinError 10054] Une connexion existante a dû être fermée par l’hôte distant
+2025-06-24 19:00:49,233 - INFO - Thread-1 (handle_client) - Broadcasting from System (to others): "testuser has left the chat."
