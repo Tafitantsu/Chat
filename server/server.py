@@ -147,9 +147,9 @@ def handle_client(conn, addr):
         print(f"[ERROR] Unhandled exception for {addr}: {e}")
     finally:
         print(f"[DISCONNECTED] {addr} disconnected.")
-        with clients_lock:
-            if conn in clients:
-                clients.remove(conn)
+        with clients_info_lock:
+            if conn in connected_clients_info:
+                del connected_clients_info[conn]
         conn.close()
 
 def start_server():
@@ -171,8 +171,8 @@ def start_server():
         except KeyboardInterrupt:
             print("\n[SHUTTING DOWN] Server is shutting down...")
         finally:
-            with clients_lock:
-                for client_conn in clients:
+            with clients_info_lock:
+                for client_conn in list(connected_clients_info.keys()):
                     client_conn.close()
             s.close()
             print("[SERVER CLOSED]")
