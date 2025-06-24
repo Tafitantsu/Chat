@@ -1,0 +1,6 @@
+2025-06-24 18:16:34,849 - INFO - Thread-1 (handle_client) - New connection from ('127.0.0.1', 36155). Waiting for authentication.
+2025-06-24 18:17:59,461 - ERROR - Thread-1 (handle_client) - Error sending encrypted message to ('127.0.0.1', 36155): [WinError 10054] Une connexion existante a dû être fermée par l’hôte distant
+2025-06-24 18:18:01,879 - INFO - Thread-2 (handle_client) - New connection from ('127.0.0.1', 36251). Waiting for authentication.
+2025-06-24 18:22:22,883 - INFO - Thread-3 (handle_client) - New connection from ('127.0.0.1', 36491). Waiting for authentication.
+2025-06-24 18:24:22,707 - ERROR - Thread-3 (handle_client) - Error sending encrypted message to ('127.0.0.1', 36491): [WinError 10054] Une connexion existante a dû être fermée par l’hôte distant
+2025-06-24 18:45:19,562 - INFO - Thread-4 (handle_client) - New connection from ('127.0.0.1', 37746). Waiting for authentication.

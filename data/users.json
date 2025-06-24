@@ -1,0 +1,8 @@
+{
+  "testuser": {
+    "password_hash": "password1234"
+  },
+  "anotheruser": {
+    "password_hash": "password1234"
+  }
+}
