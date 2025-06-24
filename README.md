@@ -66,7 +66,7 @@ SecureChatTCP/
 4.  **Prepare User Data:**
     -   A sample `data/users.json` file is provided with pre-hashed passwords for `testuser` (password: `password123`) and `anotheruser` (password: `password123`).
     -   To add new users or change passwords:
-        -   You can manually edit `data/users.json` if you have a pre-hashed password (using `pbkdf2:sha256:600000$<salt>$<hash>`).
+        -   You can manually edit `data/users.json` (optional :if you have a pre-hashed password (using `pbkdf2:sha256:600000$<salt>$<hash>`).
         -   Alternatively, the `server/auth.py` script can be modified or run with example code to add users (it includes an `add_user` function that hashes passwords). For example, you could temporarily uncomment and run the `add_user` lines in its `if __name__ == '__main__':` block.
 
 ## How to Run
