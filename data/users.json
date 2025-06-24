@@ -1,0 +1,8 @@
+{
+  "testuser": {
+    "password_hash": "pbkdf2:sha256:600000$Vqg53G7gN7QzJ9pS$3ba9dd988f3a9a8f8a97158def51a705a59958f1aac089727a38922d26883db5"
+  },
+  "anotheruser": {
+    "password_hash": "pbkdf2:sha256:600000$0y1qL4wS5gR2oVfB$01e2f70a36f908208243006829c1d94079f52c8972eb038006a78c7020782678"
+  }
+}
